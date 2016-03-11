@@ -62,7 +62,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat ="player in playersList| orderBy:sortType:sortReverse | filter:searchPlayer">
+          <tr ng-repeat ="player in playersList| orderBy:sortType:sortReverse | filter:searchPlayer track by $index">
             <td>
               {{player.player}}
             </td>
