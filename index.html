@@ -21,7 +21,7 @@
     <h1>Roster builder</h1>
 
     <div class="row" ng-show="listmode">
-      <div class="row">
+      <div class="col-md-3">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Player Name" aria-describedby="player-name" ng-model="newplayer.player">
         </div>
@@ -34,12 +34,10 @@
         <div class="btn-group" role="group" aria-label="...">
           <button type="button" class="btn btn-default" ng-click ="addNewPlayer()">Add Player</button>
         </div>
-      </div>
 
-      <div class="row">
+      </div>
+  <div class="col-md-9">
         <input type="text" class="form-control" placeholder="Quick Search.." aria-describedby="search-input" ng-model="searchPlayer">
-      </div>
-
       <table class ="table table-hover">
         <thead>
           <tr>
@@ -80,10 +78,11 @@
           </tr>
         </tbody>
       </table>
-
+      </div>
     </div>
 
     <div class="row" ng-hide="listmode">
+
       <div class="playerdetails">
         <h2>
           {{playerDet.player}}
@@ -95,8 +94,9 @@
                 <img ng-src="{{playerDet.pic}}" ng-show ="playerDet.pic"/>   
               </div>
             </div>
+            </div>
+            <div  class="col-md-8">
             <input type="text" class="form-control" placeholder="Player Picture URL" aria-describedby="player-pic" ng-model="playerDet.pic">
-
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Player Team" aria-describedby="player-team" ng-model="playerDet.team">
             </div>
@@ -112,6 +112,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </body>

@@ -2,10 +2,10 @@
   cursor: click;
 }
 
-/*.table>.namesort:hover, .table>.teamsort:hover, .table>.positionsort:hover{
+.table>.namesort:hover, .table>.teamsort:hover, .table>.positionsort:hover{
   background-color: lightgrey;
   cursor: pointer;
-}*/
+}
 
 img {
   max-width: 100%;
@@ -13,8 +13,8 @@ img {
 }
 
 .outerbox {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 300px;
   height: auto;
   float: left;
   margin: 3px;
