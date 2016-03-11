@@ -92,10 +92,10 @@
           <div class="col-md-4">
             <div class="outerouterbox">
               <div class="outerbox">
-                <img ng-src="{{playerDet.pic}}"/>   
+                <img ng-src="{{playerDet.pic}}" ng-show ="playerDet.pic"/>   
               </div>
             </div>
-            <input type="text" class="form-control" placeholder="Player Picture" aria-describedby="player-pic" ng-model="playerDet.pic">
+            <input type="text" class="form-control" placeholder="Player Picture URL" aria-describedby="player-pic" ng-model="playerDet.pic">
 
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Player Team" aria-describedby="player-team" ng-model="playerDet.team">

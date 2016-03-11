@@ -18,7 +18,6 @@ function refreshData(){
     });
 };
     $scope.showDetails = function() {
-
         edPlayer=this.player;
         playerService.getIndividual(this.player).then(function(res) {
             $scope.playerDet = res.data;
@@ -42,8 +41,10 @@ function refreshData(){
     $scope.updatePlayer = function() {
         playerService.update(edPlayer, $scope.playerDet).then(function(res) {
             console.log(res.data);
-            swal("Successfully Updated!");
+            refreshData();
             $scope.playerDet = res.data;
+            swal("Successfully Updated!");
+
         }, function(err) {
             swal("Oops...", "Something went wrong!", "error");
             console.log("err: ", err);
